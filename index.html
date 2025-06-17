@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="description" content="POLO بولو - Sucette glacée & Boissons à Tiaret. Découvrez nos produits rafraîchissants depuis 1974. Contact: 05 50063036">
+    <meta name="keywords" content="POLO, بولو, sucette glacée, boissons, Tiaret, Algeria, ice lollies, beverages">
+    <meta name="author" content="POLO بولو">
+    <title>POLO بولو - Sucette glacée & Boissons</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts for Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="logo-loader">
+                <img src="images/logo.png" alt="POLO Logo" class="preloader-logo">
+                <div class="logo-shine"></div>
+            </div>
+            <div class="loading-text">
+                <span>P</span>
+                <span>O</span>
+                <span>L</span>
+                <span>O</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="fr">
+            <img src="https://flagcdn.com/w20/fr.png" alt="Français" class="flag-icon">
+            <span>FR</span>
+        </button>
+        <button class="lang-btn" data-lang="ar">
+            <img src="https://flagcdn.com/w20/dz.png" alt="العربية" class="flag-icon">
+            <span>AR</span>
+        </button>
+        <button class="lang-btn" data-lang="en">
+            <img src="https://flagcdn.com/w20/gb.png" alt="English" class="flag-icon">
+            <span>EN</span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="navbar">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <img src="images/logo.png" alt="Polo Logo" class="nav-logo enlarged-logo">
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-content">
+            <ul class="menu-list">
+                <li><a href="#home"><i class="fas fa-home"></i> <span data-translate="menu-home">Accueil</span></a></li>
+                <li><a href="#products"><i class="fas fa-ice-cream"></i> <span data-translate="menu-products">Produits</span></a></li>
+                <li><a href="#videos"><i class="fas fa-video"></i> <span data-translate="menu-videos">Vidéos</span></a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> <span data-translate="menu-contact">Contact</span></a></li>
+            </ul>
+            <div class="menu-footer">
+                <div class="social-icons">
+                    <a href="https://facebook.com/PoloBoissons" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://maps.app.goo.gl/3qWVw84XvpH1ty5u5?g_st=iw" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="mailto:poloboissons@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:0550063036"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/img1.png" alt="Polo Hero" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo-container">
+                <img src="images/logo.png" alt="POLO Logo" class="hero-logo">
+                <div class="logo-particles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <p class="hero-subtitle" data-translate="hero-subtitle">Sucette glacée 🧊 & Boissons - La Fraîcheur Ultime </p>
+            <button class="cta-button">
+                <span data-translate="cta-discover">Découvrir</span>
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        <div class="hero-decorations">
+            <div class="floating-icon" style="--delay: 0s"><i class="fas fa-snowflake"></i></div>
+            <div class="floating-icon" style="--delay: 1.5s"><i class="fas fa-ice-cream"></i></div>
+            <div class="floating-icon" style="--delay: 3s"><i class="fas fa-star"></i></div>
+            <div class="floating-icon" style="--delay: 4.5s"><i class="far fa-snowflake"></i></div>
+            <div class="floating-icon" style="--delay: 6s"><i class="fas fa-icicles"></i></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-translate="products-title">La Gamme Glacée</span>
+                <i class="fas fa-ice-cream title-icon"></i>
+            </h2>
+
+            <p class="products-intro" data-translate="products-intro">
+                POLO بولو - La référence incontournable des produits rafraîchissants. Découvrez nos sucettes glacées aux saveurs délicieuses, prêtes à consommer pour une fraîcheur instantanée!
+            </p>
+
+            <div class="products-grid">
+                <!-- Product 1: Berry Fruity -->
+                <div class="product-card" data-flavor="berry">
+                    <div class="product-badge" data-translate="badge-frozen">Glacée</div>
+                    <div class="product-image-wrapper">
+                        <img src="images/img2.png" alt="Berry Fruity" class="product-image">
+                        <div class="product-glow"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" 
+                            data-fr="Goût Fruité de Baies" 
+                            data-ar="ذوق التوت الفاكهي" 
+                            data-en="Berry Fruity Flavor">Goût Fruité de Baies</h3>
+                        <p class="product-description" 
+                            data-fr="Un mélange délicieux de baies sauvages et fruits rouges" 
+                            data-ar="مزيج لذيذ من التوت البري والفواكه الحمراء" 
+                            data-en="A delicious blend of wild berries and red fruits">Un mélange délicieux de baies sauvages et fruits rouges</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Bubble Gum Berry -->
+                <div class="product-card" data-flavor="bubblegum">
+                    <div class="product-badge" data-translate="badge-frozen">Glacée</div>
+                    <div class="product-image-wrapper">
+                        <img src="images/img3.png" alt="Bubble Gum Berry" class="product-image">
+                        <div class="product-glow"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" 
+                            data-fr="Bubble Gum Berry" 
+                            data-ar="علكة التوت البري" 
+                            data-en="Bubble Gum Berry">Bubble Gum Berry</h3>
+                        <p class="product-description" 
+                            data-fr="Un mélange unique de bubble gum et fruits rouges" 
+                            data-ar="مزيج فريد من العلكة والتوت الأحمر" 
+                            data-en="A unique blend of bubble gum and red fruits">Un mélange unique de bubble gum et fruits rouges</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Strawberry -->
+                <div class="product-card" data-flavor="strawberry">
+                    <div class="product-badge" data-translate="badge-frozen">Glacée</div>
+                    <div class="product-image-wrapper">
+                        <img src="images/img4.png" alt="Fraise" class="product-image">
+                        <div class="product-glow"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" 
+                            data-fr="Fraise" 
+                            data-ar="فراولة" 
+                            data-en="Strawberry">Fraise</h3>
+                        <p class="product-description" 
+                            data-fr="La saveur authentique de la fraise mûre et sucrée" 
+                            data-ar="طعم الفراولة الطبيعي الناضج والحلو" 
+                            data-en="The authentic taste of ripe and sweet strawberry">La saveur authentique de la fraise mûre et sucrée</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Cotton Candy -->
+                <div class="product-card" data-flavor="cottcandy">
+                    <div class="product-badge" data-translate="badge-frozen">Glacée</div>
+                    <div class="product-image-wrapper">
+                        <img src="images/img5.png" alt="Barbe à Papa" class="product-image">
+                        <div class="product-glow"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" 
+                            data-fr="Barbe à Papa" 
+                            data-ar="غزل البنات" 
+                            data-en="Cotton Candy">Barbe à Papa</h3>
+                        <p class="product-description" 
+                            data-fr="La douceur sucrée et fondante de la barbe à papa" 
+                            data-ar="حلاوة غزل البنات الناعمة والذائبة" 
+                            data-en="The sweet and melting softness of cotton candy">La douceur sucrée et fondante de la barbe à papa</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Candy -->
+                <div class="product-card" data-flavor="candy">
+                    <div class="product-badge" data-translate="badge-frozen">Glacée</div>
+                    <div class="product-image-wrapper">
+                        <img src="images/img6.png" alt="Bonbon" class="product-image">
+                        <div class="product-glow"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" 
+                            data-fr="Bonbon" 
+                            data-ar="حلوى" 
+                            data-en="Candy">Bonbon</h3>
+                        <p class="product-description" 
+                            data-fr="Un festival de saveurs sucrées comme vos bonbons préférés" 
+                            data-ar="مهرجان من النكهات الحلوة مثل حلوياتك المفضلة" 
+                            data-en="A festival of sweet flavors like your favorite candies">Un festival de saveurs sucrées comme vos bonbons préférés</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Lemon -->
+                <div class="product-card" data-flavor="lemon">
+                    <div class="product-badge" data-translate="badge-frozen">Glacée</div>
+                    <div class="product-image-wrapper">
+                        <img src="images/img7.png" alt="Citron" class="product-image">
+                        <div class="product-glow"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" 
+                            data-fr="Citron" 
+                            data-ar="ليمون" 
+                            data-en="Lemon">Citron</h3>
+                        <p class="product-description" 
+                            data-fr="La fraîcheur acidulée et rafraîchissante du citron" 
+                            data-ar="انتعاش الليمون الحمضي والمنعش" 
+                            data-en="The tangy and refreshing freshness of lemon">La fraîcheur acidulée et rafraîchissante du citron</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="videos-section" id="videos">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-translate="videos-title">Découvrez POLO en Action</span>
+                <i class="fas fa-play-circle title-icon"></i>
+            </h2>
+
+            <div class="videos-grid">
+                <div class="video-card">
+                    <video class="video-player" controls>
+                        <source src="videos/videoeins.mp4" type="video/mp4">
+                        <source src="videos/videoeins.webm" type="video/webm">
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                    </video>
+                </div>
+
+                <div class="video-card featured">
+                    <video class="video-player" controls>
+                        <source src="videos/videozwei.mp4" type="video/mp4">
+                        <source src="videos/videozwei.webm" type="video/webm">
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                    </video>
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i> Featured
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <video class="video-player" controls>
+                        <source src="videos/videodrei.mp4" type="video/mp4">
+                        <source src="videos/videodrei.webm" type="video/webm">
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-translate="contact-title">Contactez-nous</span>
+                <i class="fas fa-phone title-icon"></i>
+            </h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="company-name">
+                        <h3>POLO بولو</h3>
+                        <p data-translate="company-desc">Sucette glacée & Boissons</p>
+                    </div>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 data-translate="phone-label">Téléphone</h4>
+                                <a href="tel:0550063036">05 50063036</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:poloboissons@gmail.com">poloboissons@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Facebook</h4>
+                                <a href="https://facebook.com/PoloBoissons" target="_blank">Polo Boissons</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 data-translate="location-label">Localisation</h4>
+                                <a href="https://maps.app.goo.gl/3qWVw84XvpH1ty5u5?g_st=iw" target="_blank" data-translate="view-map">Voir sur la carte</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.123456789!2d1.3166667!3d35.3166667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDE5JzAwLjAiTiAxwrAxOScwMC4wIkU!5e0!3m2!1sfr!2sdz!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/3qWVw84XvpH1ty5u5?g_st=iw" target="_blank" class="map-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span data-translate="open-maps">Ouvrir dans Google Maps</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-translate="cta-title">Prêt pour une explosion de fraîcheur?</h2>
+                <p data-translate="cta-subtitle">Contactez-nous pour commander nos produits</p>
+                <a href="tel:0550063036" class="cta-button-primary">
+                    <span data-translate="cta-call-now">Appelez maintenant</span>
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Polo" class="footer-logo">
+                    <h3 class="footer-title">POLO بولو</h3>
+                    <p data-translate="footer-tagline">Sucette glacée & Boissons </p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> 0550063036</p>
+                        <p><i class="fas fa-envelope"></i> poloboissons@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="https://facebook.com/PoloBoissons" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://maps.app.goo.gl/3qWVw84XvpH1ty5u5?g_st=iw" target="_blank" title="Location"><i class="fas fa-map-marker-alt"></i></a>
+                    <a href="mailto:poloboissons@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:0550063036" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Polo.Boissons <span data-translate="footer-rights">Tous droits réservés.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Magic Button -->
+    <button class="magic-button" id="magicButton">
+        <i class="fas fa-magic"></i>
+    </button>
+
+    <!-- JavaScript for Language Switching -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            
+            // Translation data
+            const translations = {
+                'menu-home': {
+                    fr: 'Accueil',
+                    ar: 'الرئيسية',
+                    en: 'Home'
+                },
+                'menu-products': {
+                    fr: 'Produits',
+                    ar: 'المنتجات',
+                    en: 'Products'
+                },
+                'menu-videos': {
+                    fr: 'Vidéos',
+                    ar: 'الفيديوهات',
+                    en: 'Videos'
+                },
+                'menu-contact': {
+                    fr: 'Contact',
+                    ar: 'اتصل بنا',
+                    en: 'Contact'
+                },
+                'hero-subtitle': {
+                    fr: 'Sucette glacée 🧊 & Boissons - La Fraîcheur Ultime',
+                    ar: 'مصاصة مثلجة 🧊 ومشروبات - النضارة المطلقة',
+                    en: 'Ice Lollies 🧊 & Beverages - Ultimate Freshness'
+                },
+                'cta-discover': {
+                    fr: 'Découvrir',
+                    ar: 'اكتشف',
+                    en: 'Discover'
+                },
+                'products-title': {
+                    fr: 'La Gamme Glacée',
+                    ar: 'مجموعة المثلجات',
+                    en: 'Ice Collection'
+                },
+                'products-intro': {
+                    fr: 'POLO بولو - La référence incontournable des produits rafraîchissants. Découvrez nos sucettes glacées aux saveurs délicieuses, prêtes à consommer pour une fraîcheur instantanée!',
+                    ar: 'بولو POLO - المرجع الأساسي للمنتجات المنعشة. اكتشف مصاصاتنا المثلجة بالنكهات اللذيذة، جاهزة للاستهلاك لانتعاش فوري!',
+                    en: 'POLO بولو - The essential reference for refreshing products. Discover our ice lollies with delicious flavors, ready to consume for instant freshness!'
+                },
+                'badge-frozen': {
+                    fr: 'Glacée',
+                    ar: 'مثلجة',
+                    en: 'Frozen'
+                },
+                'videos-title': {
+                    fr: 'Découvrez POLO en Action',
+                    ar: 'اكتشف بولو في العمل',
+                    en: 'Discover POLO in Action'
+                },
+                'contact-title': {
+                    fr: 'Contactez-nous',
+                    ar: 'اتصل بنا',
+                    en: 'Contact Us'
+                },
+                'company-desc': {
+                    fr: 'Sucette glacée & Boissons',
+                    ar: 'مصاصة مثلجة ومشروبات',
+                    en: 'Ice Lollies & Beverages'
+                },
+                'phone-label': {
+                    fr: 'Téléphone',
+                    ar: 'الهاتف',
+                    en: 'Phone'
+                },
+                'location-label': {
+                    fr: 'Localisation',
+                    ar: 'الموقع',
+                    en: 'Location'
+                },
+                'view-map': {
+                    fr: 'Voir sur la carte',
+                    ar: 'عرض على الخريطة',
+                    en: 'View on map'
+                },
+                'open-maps': {
+                    fr: 'Ouvrir dans Google Maps',
+                    ar: 'فتح في خرائط جوجل',
+                    en: 'Open in Google Maps'
+                },
+                'cta-title': {
+                    fr: 'Prêt pour une explosion de fraîcheur?',
+                    ar: 'مستعد لانفجار من النضارة؟',
+                    en: 'Ready for an explosion of freshness?'
+                },
+                'cta-subtitle': {
+                    fr: 'Contactez-nous pour commander nos produits',
+                    ar: 'اتصل بنا لطلب منتجاتنا',
+                    en: 'Contact us to order our products'
+                },
+                'cta-call-now': {
+                    fr: 'Appelez maintenant',
+                    ar: 'اتصل الآن',
+                    en: 'Call now'
+                },
+                'footer-tagline': {
+                    fr: 'Sucette glacée & Boissons',
+                    ar: 'مصاصة مثلجة ومشروبات',
+                    en: 'Ice Lollies & Beverages'
+                },
+                'footer-rights': {
+                    fr: 'Tous droits réservés.',
+                    ar: 'جميع الحقوق محفوظة.',
+                    en: 'All rights reserved.'
+                }
+            };
+            
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const selectedLang = this.dataset.lang;
+                    
+                    // Remove active class from all buttons
+                    langButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Update all elements with data-translate attributes
+                    document.querySelectorAll('[data-translate]').forEach(element => {
+                        const key = element.dataset.translate;
+                        if (translations[key] && translations[key][selectedLang]) {
+                            element.textContent = translations[key][selectedLang];
+                        }
+                    });
+                    
+                    // Update all elements with language data attributes
+                    document.querySelectorAll('[data-fr]').forEach(element => {
+                        const text = element.dataset[selectedLang];
+                        if (text) {
+                            element.textContent = text;
+                        }
+                    });
+                    
+                    // Update text direction for Arabic
+                    if (selectedLang === 'ar') {
+                        document.documentElement.setAttribute('dir', 'rtl');
+                        document.documentElement.setAttribute('lang', 'ar');
+                    } else {
+                        document.documentElement.setAttribute('dir', 'ltr');
+                        document.documentElement.setAttribute('lang', selectedLang);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
